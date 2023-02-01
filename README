@@ -1,0 +1,18 @@
+A virtual stand alone mixer for alsa.
+
+# build
+
+make
+
+# install
+
+make install
+depmod -a
+
+# modprobe
+
+make probe; dmesg -c
+
+#  rmmod
+
+make unprobe
